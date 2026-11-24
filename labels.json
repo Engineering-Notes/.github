@@ -1,0 +1,18 @@
+[
+  {"name": "bug", "color": "E2321E", "description": "Code fails or produces a wrong result"},
+  {"name": "article-correction", "color": "D93F0B", "description": "A statement, number or citation in an article is wrong"},
+  {"name": "enhancement", "color": "111111", "description": "New experiment, scenario or improvement"},
+  {"name": "security", "color": "B60205", "description": "Security-related change"},
+  {"name": "documentation", "color": "77736B", "description": "README, guides or comments"},
+  {"name": "dependencies", "color": "C9C4B9", "description": "Dependency updates"},
+  {"name": "ci", "color": "5319E7", "description": "Continuous integration and workflows"},
+  {"name": "article", "color": "0E8A16", "description": "Adds or changes the code for an article"},
+  {"name": "needs-triage", "color": "FBCA04", "description": "Waiting for a maintainer to review"},
+  {"name": "needs-reproduction", "color": "FEF2C0", "description": "Needs a run that reproduces the problem"},
+  {"name": "good first issue", "color": "7057FF", "description": "A well-scoped task for a first contribution"},
+  {"name": "help wanted", "color": "008672", "description": "Maintainers would welcome a pull request"},
+  {"name": "question", "color": "D4C5F9", "description": "A question rather than a change"},
+  {"name": "topic-proposal", "color": "BFDADC", "description": "A proposed article or series"},
+  {"name": "wontfix", "color": "EEEBE4", "description": "Will not be changed, with a reason given"},
+  {"name": "duplicate", "color": "EEEBE4", "description": "Already reported"}
+]
