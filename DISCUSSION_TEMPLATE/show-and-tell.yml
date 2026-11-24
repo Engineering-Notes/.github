@@ -1,0 +1,8 @@
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you built or changed
+      description: How you used an Engineering Notes pattern, and what happened. Links and numbers welcome.
+    validations:
+      required: true
