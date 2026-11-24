@@ -1,0 +1,14 @@
+labels: ["question"]
+body:
+  - type: input
+    id: article
+    attributes:
+      label: Article or folder
+      description: Link to the article, or the repository folder your question is about.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What you are trying to understand or do, and what you have tried.
+    validations:
+      required: true
