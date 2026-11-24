@@ -1,0 +1,33 @@
+name: Article correction
+description: A statement, number or citation in an article is wrong or out of date.
+title: "docs(<folder>): "
+labels: ["article-correction", "needs-triage"]
+body:
+  - type: input
+    id: article
+    attributes:
+      label: Article
+      description: Link to the article on codemwangi.substack.com.
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: The statement
+      description: Quote the sentence, table cell or figure that is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is correct
+      description: The correct statement, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A specification, RFC, official documentation, paper, or a reproducible run.
+    validations:
+      required: true
