@@ -1,0 +1,30 @@
+title: "[Topic] "
+labels: ["topic-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: Propose an article, an experiment or a whole series. The best proposals name a problem real systems get wrong and say how it could be measured.
+  - type: input
+    id: series
+    attributes:
+      label: Series
+      description: Payment Systems, Distributed Systems, AI Engineering, or new.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What goes wrong in real systems, and who it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: experiment
+    attributes:
+      label: How it could be measured
+      description: What an experiment would run, and what result would be interesting.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Specifications, papers, postmortems or documentation worth reading.
