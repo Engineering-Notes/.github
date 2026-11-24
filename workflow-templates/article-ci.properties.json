@@ -1,0 +1,7 @@
+{
+  "name": "Engineering Notes article CI",
+  "description": "Discovers every NN-name article folder and runs npm ci && npm test in each, with PostgreSQL 16.",
+  "iconName": "octicon check-circle",
+  "categories": ["JavaScript", "Continuous integration"],
+  "filePatterns": ["^\\d\\d-.*/package\\.json$"]
+}
