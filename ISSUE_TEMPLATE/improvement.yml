@@ -1,0 +1,33 @@
+name: Improvement
+description: A new experiment, scenario, measurement or code improvement.
+title: "feat(<folder>): "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: input
+    id: folder
+    attributes:
+      label: Article folder
+      description: The folder this applies to, or "new" for a new experiment.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What you want to add or change, and what it would show.
+    validations:
+      required: true
+  - type: textarea
+    id: measure
+    attributes:
+      label: How it would be measured
+      description: What the test would run, and what result would confirm or refute the claim.
+  - type: dropdown
+    id: help
+    attributes:
+      label: Would you like to implement it?
+      options:
+        - Yes, I would like to open a pull request
+        - No, I am suggesting it
+    validations:
+      required: true
