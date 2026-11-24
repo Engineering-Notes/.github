@@ -1,0 +1,47 @@
+name: Bug report
+description: Code fails, or produces results different from the article.
+title: "bug(<folder>): "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting. A run that reproduces the problem is the fastest way to a fix.
+  - type: input
+    id: folder
+    attributes:
+      label: Article folder
+      description: The folder the problem is in, for example `08-mpesa-stk-push`.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The full output of `npm test`, or the error.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Operating system, Node.js version, PostgreSQL version if used.
+      placeholder: Ubuntu 24.04, Node.js 22.11, PostgreSQL 16.4
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I ran `npm ci` before `npm test`, on the latest `main`.
+          required: true
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
